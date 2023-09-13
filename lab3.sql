@@ -31,3 +31,12 @@ insert into professor (p_email,p_name,office)
 values ('p3@jmu.edu','p3','o3')
 insert into course (c_number,c_name,room,p_email)
 values ('c4', 'facebook','r1','p3@jmu.edu')
+
+--Q2.6
+--update course table first because you cannot delete p1 from the professor table while he's still teaching a course in the relational table
+update course
+set p_email = 'p3@jmu.edu'
+where p_email = 'p1@jmu.edu'
+
+delete from professor
+where p_emil = 'p1@jmu.edu'
