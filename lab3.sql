@@ -26,7 +26,7 @@ values ('s1@jmu.edu','c1'),
 	('s3@jmu.edu','c3')
 
 --Q2.5
---insert professor first because the course table is relational to the professor table
+--insert professor first because the course table is relational to the professor table (need p3@jmu.edu entered first or error will occur in course table)
 insert into professor (p_email,p_name,office)
 values ('p3@jmu.edu','p3','o3')
 insert into course (c_number,c_name,room,p_email)
