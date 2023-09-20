@@ -45,7 +45,11 @@ where p_email = 'p1@jmu.edu'
 select * from enroll
 
 --Q2.8
-
+select c_number,count(*) as num_student
+from enroll
+group by c_number
+order by num_student desc
+limit 1
 
 --Q2.9
 
